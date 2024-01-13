@@ -1,0 +1,10 @@
+---
+const { tech: { bgColor, textColor, name } } = Astro.props;
+
+---
+
+<div class={`${bgColor} rounded-2xl`}>
+  <p class={`text-sm font-lexend ${textColor} px-4 py-2`}>
+    {name}
+  </p>
+</div>

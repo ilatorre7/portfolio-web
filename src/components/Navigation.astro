@@ -1,0 +1,13 @@
+---
+import MenuItem from "./molecules/MenuItem.astro";
+
+const currentPath = Astro.url.pathname;
+---
+
+<nav>
+  <ul class="flex flex-col gap-8">
+    <MenuItem label="about" href="/" currentPath={currentPath} />
+    <MenuItem label="experience" href="/experience" currentPath={currentPath} />
+    <MenuItem label="projects" href="/projects" currentPath={currentPath} />
+  </ul>
+</nav>

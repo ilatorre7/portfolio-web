@@ -1,0 +1,16 @@
+---
+const { label, href, currentPath } = Astro.props;
+
+const isActive = currentPath === href;
+const color = isActive ? `text-main-green` : `text-main-txt`;
+const display = isActive ? `flex` : `hidden`;
+---
+
+<li>
+  <a class="flex flex-row gap-2" href={href}>
+    <p class={`${display}`}>•</p>
+    <p class={`text-xl uppercase font-lexend-deca ${color} tracking-wide`}>
+      {label}
+    </p>
+  </a>
+</li>

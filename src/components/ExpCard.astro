@@ -1,0 +1,24 @@
+---
+import Tech from "./atoms/Tech.astro";
+
+const { init, end, role, place, description, techs } = Astro.props;
+---
+
+<div class="flex flex-row gap-6">
+  <div class="w-1/5">
+    <p class="text-base font-lexend">{init} - {end}</p>
+  </div>
+  <div class="flex flex-col gap-2 w-4/5">
+    <h3 class="text-2xl font-lexend">{role} • {place}</h3>
+    <p class="text-base font-lexend">{description}</p>
+    <div class="flex flex-wrap gap-4">
+      {
+        techs.map(
+          (tech: { name: string; bgColor: string; textColor: string }) => (
+            <Tech tech={tech} />
+          )
+        )
+      }
+    </div>
+  </div>
+</div>

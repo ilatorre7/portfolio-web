@@ -1,0 +1,33 @@
+---
+import ExpCard from "./ExpCard.astro";
+---
+
+<div
+  class="h-screen flex flex-col gap-6 flex-1 pt-48 pb-16"
+  transition:animate="slide"
+>
+  <ExpCard
+    init="2023"
+    end="Present"
+    role="Designer / Front End Dev"
+    place="Flyware Labs"
+    description="Designing and building landing pages and dynamic components for Venture Ashore, a cruise tours company"
+    techs={[
+      { name: "Javascript", bgColor: "bg-[#F0DB50]", textColor: "main-text" },
+      { name: "CSS", bgColor: "bg-[#0070BA]", textColor: "text-white" },
+      { name: "HTML", bgColor: "bg-[#E44D26]", textColor: "text-white" },
+      { name: "Figma", bgColor: "bg-[#000000]", textColor: "text-white" },
+    ]}
+  />
+  <ExpCard
+    init="2020"
+    end="2022"
+    role="Front End Engineer"
+    place="Quiena Inversiones"
+    description="Created and styled complex front end components for web and mobile apps. Developed and maintained multiple features for the mobile app."
+    techs={[
+      { name: "React Native", bgColor: "bg-[#61DAFB]", textColor: "main-text" },
+      { name: "Next.js", bgColor: "bg-[#000000]", textColor: "text-white" },
+    ]}
+  />
+</div>
