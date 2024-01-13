@@ -2,7 +2,10 @@
 import ProjectCard from "./ProjectCard.astro";
 ---
 
-<div class="h-screen flex flex-col gap-6 flex-1 pt-48 pb-16">
+<div
+  class="h-screen flex flex-col gap-6 flex-1 pt-48 pb-16"
+  transition:animate="slide"
+>
   <ProjectCard
     title="Cryptracker"
     description="A website for a tracking cryptocurrencies' values in the market"
